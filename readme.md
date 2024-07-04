@@ -42,7 +42,7 @@ fakestore-api/
 ```
 
 ## Endpoints
-  # Categories
+  ### Categories
     GET /categories: Retrieve all categories
     POST /categories: Create a new category (authenticated)
     PUT /categories/
@@ -50,14 +50,44 @@ fakestore-api/
     DELETE /categories/
       : Delete a category (authenticated)
 
-  # Products
-    GET /products: Retrieve all products
-    POST /products: Create a new product (authenticated)
-    PUT /products/
-      : Update a product (authenticated)
-    DELETE /products/
-      : Delete a product (authenticated)
+  ### Products
+    `GET /products`
 
-## Authentication
+        Retrieve all products
+
+    `POST /products`
+     
+        Create a new product (authenticated)
+    
+    `PUT /products/:id` 
+    
+        Update a product (authenticated)
+    
+    `DELETE /products/:id`
+      
+         Delete a product (authenticated)
+
+### Authentication
 - Use Passport.js for user authentication.
   Only authenticated users can create, edit, or delete categories and products.
+
+## Install
+
+    npm install
+
+## Setup the database 
+
+    node migrations/initial.js
+
+## seed the database 
+
+    node seeds/seeder.js
+
+## Start the server
+
+    npm start
+
+## testing 
+  run unit test 
+
+    npm test 
