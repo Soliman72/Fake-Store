@@ -43,29 +43,41 @@ fakestore-api/
 
 ## Endpoints
   ### Categories
-    GET /categories: Retrieve all categories
-    POST /categories: Create a new category (authenticated)
-    PUT /categories/
-      : Update a category (authenticated)
-    DELETE /categories/
-      : Delete a category (authenticated)
+
+`GET /categories `
+
+    Retrieve all categories
+
+    
+`POST /categories`
+
+    Create a new category (authenticated)
+
+`PUT /categories/:id`
+
+    Update a category (authenticated)
+
+`DELETE /categories/`
+
+    Delete a category (authenticated)
 
   ### Products
-    `GET /products`
 
-        Retrieve all products
+`GET /products`
 
-    `POST /products`
-     
-        Create a new product (authenticated)
+    Retrieve all products
+
+`POST /products`
+
+    Create a new product (authenticated)
     
-    `PUT /products/:id` 
-    
-        Update a product (authenticated)
-    
-    `DELETE /products/:id`
-      
-         Delete a product (authenticated)
+`PUT /products/:id` 
+
+    Update a product (authenticated)
+
+`DELETE /products/:id`
+
+    Delete a product (authenticated)
 
 ### Authentication
 - Use Passport.js for user authentication.
