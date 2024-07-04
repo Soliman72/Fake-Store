@@ -1,35 +1,4 @@
-const db = require('../config/db');
-
-// // Seed Categories
-// for (let i = 0; i < 10; i++) {
-//   const name = "frist category"
-//   db.query('INSERT INTO categories (name) VALUES (?)', [name], (err, results) => {
-//     if (err) throw err;
-//   });
-// }
-
-// // Seed Products
-// db.query('SELECT id FROM categories', (err, results) => {
-//   if (err) throw err;
-//   const categories = results.map(category => category.id);
-
-//   for (let i = 0; i < 100; i++) {
-//     const name = "first product";
-//     const description = "new description for first product";
-//     const price = 4000;
-//     const category_id = 36;
-
-//     db.query('INSERT INTO products (name, description, price, category_id) VALUES (?, ?, ?, ?)', [name, description, price, category_id], (err, results) => {
-//       if (err) throw err;
-//     });
-//   }
-// });
-
-
-
-
-
-
+const db = require( '../config/db' );
 
 async function seedCategories() {
   // Insert categories
