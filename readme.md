@@ -11,6 +11,7 @@ This project implements a RESTful API for a fake store using Node.js, Express, a
 
 ## Project Structure
 
+```bash
 fakestore-api/
 ├── config/
 │   ├── auth.js
@@ -36,4 +37,27 @@ fakestore-api/
 ├── .gitignore
 ├── package.json
 ├── readme.md
-└── index.js
+└── index.js 
+
+```
+
+## Endpoints
+  # Categories
+    GET /categories: Retrieve all categories
+    POST /categories: Create a new category (authenticated)
+    PUT /categories/
+      : Update a category (authenticated)
+    DELETE /categories/
+      : Delete a category (authenticated)
+
+  # Products
+    GET /products: Retrieve all products
+    POST /products: Create a new product (authenticated)
+    PUT /products/
+      : Update a product (authenticated)
+    DELETE /products/
+      : Delete a product (authenticated)
+
+## Authentication
+- Use Passport.js for user authentication.
+  Only authenticated users can create, edit, or delete categories and products.
